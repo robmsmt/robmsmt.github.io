@@ -43,3 +43,4 @@ node_modules
 bower_components
 _rebuild_gh_page.sh
 _build_and_serve.sh
+_quick_git.sh
