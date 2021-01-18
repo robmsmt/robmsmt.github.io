@@ -2,8 +2,8 @@
 title:               robmsmt
 tagline:             'curious speech'
 description:         'A reserved space for random ramblings'
-url:                 
-baseurl:             '/'
+url:                 "http://robmsmt.github.io" 
+baseurl:             ''
 paginate:            5
 permalink:           pretty
 
