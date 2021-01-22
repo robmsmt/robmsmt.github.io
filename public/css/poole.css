@@ -153,8 +153,7 @@ pre {
   font-family: Menlo, Monaco, "Courier New", monospace;
 }
 code {
-  /*padding: .25em .5em;*/
-  padding: 0px -70px;
+  padding: .25em .5em;
   font-size: 85%;
   color: #bf616a;
   background-color: #f9f9f9;
@@ -182,6 +181,8 @@ pre code {
 
 /* Pygments via Jekyll */
 .highlight {
+  margin-left: 0rem;
+  margin-right: -1rem;
   margin-bottom: 1rem;
   border-radius: 4px;
 }
