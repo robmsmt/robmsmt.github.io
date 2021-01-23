@@ -12,7 +12,7 @@ Interests:
 * Production Systems
 
 
-Feel free to reach out at robmsmt at gmail dot com or [robmsmt](twitter.com/robmsmt)
+Feel free to reach out at robmsmt at gmail dot com or [robmsmt](https://twitter.com/robmsmt)
 
 
 
