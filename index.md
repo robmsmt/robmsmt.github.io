@@ -3,9 +3,8 @@ layout: page
 title: Home
 ---
 
-<h2 class="page-heading">About</h2>
 
-<p class="message">This is the personal blog of robmsmt. To reach out please visit [about](about.html)</p>
+<p class="message">This is the personal blog of robmsmt. To contact me please visit <a href="about.html">about</a></p>
  
 
 --- 
