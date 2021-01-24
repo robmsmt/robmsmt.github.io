@@ -1,0 +1,24 @@
+
+
+
+
+giving a talk -> "that's a great question..."
+
+will an ASR ever surpass humans?
+
+dvs?
+
+about page
+
+Repeatible machine learning tests -> md5sum of ordered md5sum of dataset
+
+flask -> fastapi for ml
+
+the ideal setup for ml. Kubernetes. Docker for inference
+
+what3words
+
+hidden 0 length chars
+
+bash starting page
+
