@@ -5,7 +5,7 @@ title: About
 
 🇬🇧 -> 🇺🇸 
 
-Machine Learning Engineer who specializes in speech speech systems & enjoys building products at the forefront of intelligent technology.
+Machine Learning Engineer who specializes in speech systems & enjoys building products at the forefront of intelligent technology.
 
 
 ---
