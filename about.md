@@ -3,13 +3,12 @@ layout: page
 title: About
 ---
 
+🇬🇧 -> 🇺🇸 
 
 Machine Learning Engineer who specializes in speech speech systems & enjoys building products at the forefront of intelligent technology.
 
-🇬🇧 -> 🇺🇸 
 
 ---
-___
 
 <h3>Interests</h3>
 * Speech & Machine Learning
