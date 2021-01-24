@@ -1,24 +1,25 @@
 
+ML ENGINEERING
+----------
 
+ - NPU -> VIM3
+ - dvs?
+ - flask -> fastapi for ml
+ - the ideal setup for ml. Kubernetes. Docker for inference
 
+-----------
+SPEECH 
 
-giving a talk -> "that's a great question..."
+ - will an ASR ever surpass humans?
 
-will an ASR ever surpass humans?
+-----------
+RESEARCH 
 
-dvs?
+ - Repeatible machine learning tests -> md5sum of ordered md5sum of dataset
 
-about page
+-----------
+MISC
 
-Repeatible machine learning tests -> md5sum of ordered md5sum of dataset
-
-flask -> fastapi for ml
-
-the ideal setup for ml. Kubernetes. Docker for inference
-
-what3words
-
-hidden 0 length chars
-
-bash starting page
+ - what3words
+ - hidden 0 length chars
 
