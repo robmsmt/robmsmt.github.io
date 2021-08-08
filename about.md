@@ -3,24 +3,24 @@ layout: page
 title: About
 ---
 
-🇬🇧 -> 🇺🇸 
+🇬🇧 -> 🇺🇸
 
-Machine Learning Engineer who specializes in speech systems & enjoys building products at the forefront of intelligent technology. I know just enough VIM to be dangerous :q
+I am a Machine Learning Engineer who specializes in speech systems & enjoys building products at the forefront of intelligent technology.
 
 
 ---
 
 <h3>Interests</h3>
 * Speech & Machine Learning
-* Data
-* Production Systems
+* Learning
+* Data & Production Systems
 
 
 ---
 
 <h3>Contact</h3>
 
-Feel free to reach out at robmsmt at gmail dot com or [robmsmt](https://twitter.com/robmsmt)
+Feel free to reach out at `[this github handle]` at gmail dot com or [Twitter](https://twitter.com/robmsmt)
 
 
 
