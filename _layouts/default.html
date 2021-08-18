@@ -5,7 +5,6 @@
 
   <body>
 
-    {% include sidebar.html %}
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
@@ -17,11 +16,11 @@
             <small>{{ site.tagline }}</small>
           </h3>
           <span style="float: right;">
-            <a href="/about" title="about" >about</a>
+            <a href="/about" title="about" style="color: #b6babd;">about</a>
             <span> | </span>
-            <a href="/" title="blog" >blog</a>
+            <a href="/" title="blog" style="color: #b6babd;">blog</a>
             <span> | </span>
-            <a href="https://github.com/robmsmt" title="github" >github</a>
+            <a href="https://github.com/robmsmt" title="github" style="color: #b6babd;">github</a>
           </span>
         </div>
       </div>
@@ -31,7 +30,7 @@
       </div>
     </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+<!--    <label for="sidebar-checkbox" class="sidebar-toggle"></label>-->
 
     <script src='{{ site.baseurl }}/public/js/script.js'></script>
   </body>

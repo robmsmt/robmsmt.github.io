@@ -2,13 +2,13 @@
 layout: post
 title: Audio from inside a Pandas Dataframe in a Jupyter Notebook
 ---
+Jupyter notebooks are fantastic tools to explore data. You can also play audio within them.
 
 <div class="message">
-  Jupyter notebooks are fantastic tools to explore data. You can also play audio within them.
+  In order to make ASR better you often have to review and listen to many audio files.
+  One great way I've found to do this is through a Pandas dataframe in a Jupyter notebook.
 </div>
 
-In order to make ASR better you often have to review and listen to many audio files.
-One great way I've found to do this is through a Pandas dataframe in a Jupyter notebook.
 
 ![image of commandline](../../../../public/audio_play.png)
 
