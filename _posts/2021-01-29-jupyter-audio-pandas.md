@@ -10,7 +10,7 @@ Jupyter notebooks are fantastic tools to explore data. You can also play audio w
 </div>
 
 
-![image of commandline](../../../../public/audio_play.png)
+![image of commandline](../../../../public/images/audio_play.png)
 
 As you can see from the picture above, it keeps the audio component hidden until you click on the wav
 filename which triggers some javascript to make the audio HTML components visible. Kinda neat.
@@ -67,8 +67,8 @@ Assuming we already have a dataframe (with column to filepath), we just need to 
 HTML(df.to_html(escape=False,formatters=dict(filename=path_to_audio_html)))
 ```
 
-![image of commandline](../../../../public/audio_play2.png)
-![image of commandline](../../../../public/audio_play3.png)
+![image of commandline](../../../../public/images/audio_play2.png)
+![image of commandline](../../../../public/images/audio_play3.png)
 
 -----
 
