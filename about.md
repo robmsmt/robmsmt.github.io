@@ -5,7 +5,7 @@ title: About
 
 🇬🇧 -> 🇺🇸
 
-I am a Machine Learning Engineer who specializes in speech systems & enjoys building products at the forefront of intelligent technology.
+I am a Machine Learning Engineer who enjoys building products at the forefront of intelligent technology.
 
 
 ---
