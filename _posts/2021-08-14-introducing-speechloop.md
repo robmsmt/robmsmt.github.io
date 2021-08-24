@@ -44,8 +44,7 @@ Here we demonstrate using a the CLI to record microphone and pipe the data into 
 <video  style="display:block; width:700px; height:auto;" autoplay controls loop="loop">
            <source src="../../../../public/images/cli_testwavs.webm"  type="video/webm"  />
  </video>
-Above we run the CLI to evaluate against the included test dataset. It outputs a CSV.
-
+Above we run the CLI to evaluate against the included test dataset. It outputs a CSV. Below is a copy of the output text - following blogposts will focus on ASR results themselves.
 ```text
 ------------------------------
 Average value of vs_corrected_wer is 0.2308
@@ -65,7 +64,7 @@ Finished, with total runtime: 0:03:42
 ```
 
 <img class="img-fluid" src="../../../../public/images/calc.png" alt="cli" width="700">
-Often it's good to load the CSV in excel-like tools to view the result.
+Often it's good to load the CSV in excel-like tools to quickly skim the results. For anything more advanced a jupyter notebook might be the way to go.
 
 ____
 
@@ -73,7 +72,7 @@ ____
  - Different data formats (e.g. Kaldi has SCP, it would be nice to read those)
  - Cost calculator for APIs
  - More ASRs
- - Benchmarks of common datasets - for example librispeech or one of the [newly released huge datasets](https://github.com/robmsmt/ASR-Audio-Data-Links/#1-free)
+ - Automated benchmarks of common datasets - for example librispeech or one of the [newly released huge datasets](https://github.com/robmsmt/ASR-Audio-Data-Links/#1-free)
 
 ____
 
