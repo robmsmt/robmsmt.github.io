@@ -98,7 +98,7 @@ ____
 
 When we run the script we provide `--wanted_asr=all` this means (as of writing):
 
-- sp = Sphinx -
+- sp = Sphinx - pocketsphinx 0.1.15
 - vs = Vosk - based off of model en-small-us-0.15
 - cq = Coqui - based off of model v0.9.3
 - gg = GoogleASR - 21-09-06
@@ -183,4 +183,5 @@ In summary once we have the corrections of each ASR in place the results are.
 Overall the results are somewhat expected. CloudASRs tend to dominate, with VOSK being very good modern alternative. Coqui had
 surprisingly bad results but we'd expected it to do better on longer sentences or with a customized language model.
 
-For the next test will try on everyone's favourite opensource dataset...!
+For the next tests planned, we will attempt to tune each for the above dataset (where possible). As well as
+trying on everyone's favourite opensource dataset...!
