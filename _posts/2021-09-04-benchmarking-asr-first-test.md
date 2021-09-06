@@ -150,6 +150,10 @@ for details... we finally get a dataframe which we can export to JSON, so you ca
     }).render(document.getElementById("wrapper"));
   </script>
 
+Something interesting to note, the WAVs "xebec" and "oars" all ASRs got wrong.
+
+There were many words that ALL ASRs got correct e.g. "class", "camera", "nail", "skateboard", "windows" and "hammer".
+
 ____
 
 
@@ -172,5 +176,8 @@ In summary once we have the corrections of each ASR in place the results are:
       ]
     }).render(document.getElementById("wrapper2"));
   </script>
+
+Overall the results are somewhat expected. CloudASRs tend to dominate, with VOSK being very good modern alternative. Coqui had
+surprisingly bad results but we'd expected it to do better on longer sentences or with a customized language model.
 
 For the next test will try on everyone's favourite opensource dataset...!
