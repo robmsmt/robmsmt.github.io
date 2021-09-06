@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Benchmarking ASRs - First 'Out of the Box' Test
+title: Benchmarking ASRs - Results from the first 'Out of the Box' Test
 ---
 
 First 'Out of the box' results for 5 ASRs: VOSK vs Sphinx vs Coqui vs Google vs Amazon
@@ -50,6 +50,10 @@ found [here](https://github.com/robmsmt/SpeechLoop/tree/master/speechloop/data/s
   🎉 The dataset is open sourced under creative commons along with the <a href="https://github.com/robmsmt/SpeechLoop">SpeechLoop tool</a> under Apache2 for anyone to download and repeat.
 I would appreciate anyone who validates and double checks and finds flaws in any part of the data/test.
 </div>
+
+Sometimes single word commands are harder for ASRs when using WER as the metric. This is for 2 reasons, firstly, because the utterances are usually very short
+there's less information to evaluate (relies on the acoustic matching more so then pure unigram probabilities). Secondly, a single character when wrong can cause the word to be incorrect which contributes very large
+error to the overall score. This can make this a useful test to run!
 
 ____
 
