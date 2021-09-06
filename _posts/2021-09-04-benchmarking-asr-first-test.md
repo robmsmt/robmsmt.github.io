@@ -159,7 +159,9 @@ ____
 
 ## 6. Conclusion
 
-In summary once we have the corrections of each ASR in place the results are:
+In summary once we have the corrections of each ASR in place the results are.
+
+  <img class="img-fluid" src="../../../../public/images/210904_benchmark_wer.png" alt="wer" width="650">
 
   <div id="wrapper2"></div>
   <script type="text/javascript">
@@ -177,6 +179,7 @@ In summary once we have the corrections of each ASR in place the results are:
     }).render(document.getElementById("wrapper2"));
   </script>
 
+<br>
 Overall the results are somewhat expected. CloudASRs tend to dominate, with VOSK being very good modern alternative. Coqui had
 surprisingly bad results but we'd expected it to do better on longer sentences or with a customized language model.
 
