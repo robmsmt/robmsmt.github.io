@@ -3,16 +3,16 @@ layout: post
 title: Introducing SpeechLoop
 ---
 
-I made a [tool](https://github.com/robmsmt/SpeechLoop) to evaluate multiple ASR (automatic speech recognition) engines and benchmark them to help answer the question, what is the best ASR?
+Here is a [tool](https://github.com/robmsmt/SpeechLoop) developed to evaluate multiple ASR (automatic speech recognition) engines and benchmark them to help answer the question, what is the best ASR for my dataset?
 
 
 ## The Problem(s)
 
-Every time you find an ASR, commercial or otherwise, they often say or imply that they are the best.
+Every time an ASR is released, commercial or otherwise, it often comes with a claim that they are the best.
 
 <img class="img-fluid" src="../../../../public/images/best_diner.jpg" alt="best-diner" width="700">
-It's a very difficult claim to substantiate. How do they know they're the best? Maybe they've publicly benchmarked? Sometimes you'll get a vague chart with cherry picked results.
-Other times you'll get a more detailed study. But still it's hard to believe that the person doing the benchmarking is likely to report findings that show their ASR in a bad light.
+It's a very difficult claim to substantiate. How do they know they're the best? Maybe they've publicly benchmarked? Sometimes they release a vague chart with cherry picked results.
+Other times there's a more detailed study. But still it's hard to believe that the person doing the benchmarking is likely to report findings that show their ASR in a bad light.
 
 Progress in the ML space moves very quickly. Overnight a new model is trained.
 What about the papers last year with the new dizzying end-2-end-2-end with mega-transformers? and with guest appearances from all your favourite childhood tv-shows. Were these compared?
@@ -21,25 +21,25 @@ It can be difficult to keep track, plus you don't want to keep hitting your comp
 >    <i>One can judge from experiment, or one can blindly accept authority.</i>
 <br>Robert A. Heinlein
 
-This is one of the reasons why SpeechLoop was born.
+This is one of the reasons why SpeechLoop was developed.
 
 ____
 
 ## Design Decisions
-The following were some design decisions I made:
+The following were some design decisions made while developing SpeechLoop:
  - **Easy to use with sensible defaults** - following the "for humans" philosophy that other python packages have popularized.
  - **Heavy use of docker where required** - Docker completely solves the issue of having to install big and heavily conflicting libraries, some of which are only needed for the
 install part of the process. If you have a reasonable amount of disk space and any x86_64 cpu you can go quite far with just sending bytes to an already built container.
- - **Limited number of 3rd party dependencies** - this can be a challenge when installing a library, the more packages the more that can go wrong.
+ - **Limited number of 3rd party dependencies** - this can be a challenge when installing a library, the more packages there are, the more that can go wrong.
  - **Pandas Dataframes** - for easy analysis and simple WER calculation... the dataframe felt like the best fit where each row corresponds to an audio file and each ASR transcript would be a column.
 
 ____
 
 ## Features
-There are many features to list, but I think a video of simple usage will be even more useful.
+There are many features to list, but a video of simple usage will be even more useful.
 
 <img class="img-fluid" src="../../../../public/images/cli_fast.gif" alt="cli" width="700">
-Here we demonstrate using a the CLI to record microphone and pipe the data into the selected 3 ASRs.
+Here we demonstrate using the CLI to record microphone and pipe the data into the selected 3 ASRs.
 
 <video  style="display:block; width:700px; height:auto;" autoplay controls loop="loop">
            <source src="../../../../public/images/cli_testwavs.webm"  type="video/webm"  />
