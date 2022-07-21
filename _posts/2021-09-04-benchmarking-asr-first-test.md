@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Benchmarking ASRs - Results from the first 'Out of the Box' Test
+title: Benchmarking ASRs - Results from the first 'Out of the Box' Test on an open source dataset
 ---
 
 First 'Out of the box' results for 5 ASRs: VOSK vs Sphinx vs Coqui vs Google vs Amazon
@@ -12,9 +12,9 @@ ____
 
 ## 1. Overview
 
-In this post I am going to go through the testing procedure on the initial small dataset that is included with
+In this post the testing procedure is discussed on the initial small dataset that is included with
 SpeechLoop. Speech systems are updated continuously so it's sometimes hard to keep track of what the latest WER of each
-system is. This tool allows for easy benchmarking to answer that question.
+system is. This tool allows for easy benchmarking for a given dataset, to answer that question.
 
 Although the test itself has a few limitations, it's very small and the simplest which may be useful for those who want
 to quickly get up and running and evaluating different speech systems.
@@ -51,8 +51,8 @@ found [here](https://github.com/robmsmt/SpeechLoop/tree/master/speechloop/data/s
 I would appreciate anyone who validates and double checks and finds flaws in any part of the data/test.
 </div>
 
-Sometimes single word commands are harder for ASRs when using WER as the metric. This is for 2 reasons, firstly, because the utterances are usually very short
-there's less information to evaluate (relies on the acoustic matching more so then pure unigram probabilities). Secondly, a single character when wrong can cause the word to be incorrect which contributes very large
+Sometimes single word commands are harder for ASRs when using WER as the metric. This is for two reasons, firstly, because the utterances are usually very short
+there's less information to evaluate (relies on the acoustic matching more so than pure unigram probabilities). Secondly, a single character when wrong can cause the word to be incorrect which contributes very large
 error to the overall score. This can make this a useful test to run!
 
 ____
@@ -60,9 +60,9 @@ ____
 
 ## 3. Setup
 
-Since this is the first benchmark I will repeat every step in detail so that others can follow.
+Since this is the first benchmark, every step is repeated in detail so that others can follow.
 
-Since we are planning to use GoogleASR and AWSTranscribe we need to setup the credentials. My prefered way is in the ~
+Since we are planning to use GoogleASR and AWSTranscribe we need to setup the credentials. Suggested way is in the ~
 /.bashrc:
 
 ```shell
@@ -73,9 +73,9 @@ export AWS_SECRET_ACCESS_KEY=<secret_access_key_here>
 export GOOGLE_APPLICATION_CREDENTIALS=/home/you/path/to/your/creds.json
 ```
 
-You can then re-source the bashrc with: `source ~/.bashrc`
+Then re-source the bashrc with: `source ~/.bashrc`
 
-Next, let's setup the repo as per the [instructions](https://github.com/robmsmt/SpeechLoop#developer---2-step-install):
+Next, setup the repo as per the [instructions](https://github.com/robmsmt/SpeechLoop#developer---2-step-install):
 
 ```shell
 git clone https://github.com/robmsmt/SpeechLoop && cd SpeechLoop
@@ -84,7 +84,7 @@ source venv/py3/bin/activate
 pip install -r requirements-dev.txt
 ```
 
-Then to run:
+Run:
 
 ```shell
 cd speechloop
@@ -113,7 +113,7 @@ ____
 
 After some minor tidying up of the dataframe, see
 the [Jupyter notebook](https://github.com/robmsmt/SpeechLoop/blob/master/notebooks/21-09-04-Benchmarking-ASR-first-test.ipynb)
-for details... we finally get a dataframe which we can export to JSON, so you can see below.
+for details... a dataframe is generated which we can export to JSON, as seen below.
 
   <div id="wrapper"></div>
   <script type="text/javascript">
@@ -150,16 +150,16 @@ for details... we finally get a dataframe which we can export to JSON, so you ca
     }).render(document.getElementById("wrapper"));
   </script>
 
-Something interesting to note, the WAVs "xebec" and "oars" all ASRs got wrong.
+Something interesting to note, all ASRs mistranscribed the WAVs "xebec" and "oars".
 
-There were many words that ALL ASRs got correct e.g. "class", "camera", "nail", "skateboard", "windows" and "hammer".
+There were many words that ALL ASRs got correct e.g. "class", "camera", "nail", "skateboard", "windows", and "hammer".
 
 ____
 
 
 ## 6. Conclusion
 
-In summary once we have the corrections of each ASR in place the results are.
+In summary, after transcription corrections for each ASR output, the following are the results.
 
   <img class="img-fluid" src="../../../../public/images/210904_benchmark_wer.png" alt="wer" width="650">
 
@@ -181,7 +181,7 @@ In summary once we have the corrections of each ASR in place the results are.
 
 <br>
 Overall the results are somewhat expected. CloudASRs tend to dominate, with VOSK being very good modern alternative. Coqui had
-surprisingly bad results but we'd expected it to do better on longer sentences or with a customized language model.
+surprisingly bad results but it is expected to do better on longer sentences or with a customized language model.
 
-For the next tests planned, we will attempt to tune each for the above dataset (where possible). As well as
+For the next tests, we will attempt to tune each for the above dataset (where possible). As well as
 trying on everyone's favourite opensource dataset...!
