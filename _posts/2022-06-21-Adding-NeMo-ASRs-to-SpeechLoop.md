@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding NeMo ASRs to SpeechLoop
-draft: true
+published: false
 ---
 
 This is a short blog post about adding NVIDIA's NeMo ASR toolkit to the SpeechLoop pipeline to help us keep track of the latest developments in the speech recognition field.
