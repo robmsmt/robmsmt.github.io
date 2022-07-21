@@ -12,10 +12,10 @@ ____
 
 ## NVIDIA NeMo Overview
 
-<img class="img-fluid" src="../../../../public/images/nemo.png" alt="nemo" width="500">
+<img class="img-fluid" src="../../../../public/images/nemo.png" alt="nemo" width="700">
 
 
-In 2019 NVIDIA released a toolkit which has helped the Speech recognition field as it has raised the bar on the quality of pretrained models that are available for researchers and production engineers alike to easily test under a single toolkit. Toolkits which make heavy use of their expensive GPUs make good strategic sense and encourage the use of their propreietary CUDA libraries. However, the toolkit as well as the models themselves are released with a very permissive open source ["Apache License 2.0"](https://github.com/NVIDIA/NeMo/blob/main/LICENSE) licence which is friendly for commercial use as well as not being overly restrictive. 
+In 2019 NVIDIA released a toolkit which has helped the Speech recognition field as it has raised the bar on the quality of pretrained models that are available for researchers and production engineers alike to easily test under a single toolkit. Toolkits which make heavy use of their expensive GPUs make good strategic sense and encourage the use of their propreietary CUDA libraries. However, the toolkit as well as the models themselves are released with a very permissive open source "[Apache License 2.0](https://github.com/NVIDIA/NeMo/blob/main/LICENSE)" licence which is friendly for commercial use as well as not being overly restrictive. 
 
 Since the initial commit, the github repo has had over 4k commits and is one of the more active speech projects on github showcasing a number of different recent developments for example, Conformer, Conformer-Transducer, LSTM-Transducer, LSTM-CTC. Each of these, in their own right, could warrant their own blog post. NeMo has since expanded beyond just speech transcription and with Voice activity Detection (VAD), Speaker Recognition, Speaker Diarization, different languages as well as some NLP tasks. 
 
