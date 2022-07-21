@@ -56,13 +56,10 @@ Now we have the checkpoint models for all 22 different NeMo engines and can comp
 
 After analysis of the data we were able to conclude that the `stt_en_contextnet_1024` model looked the most promising since it was under 1GB in size and had the 2nd best performance for the dataset we had. This meant that we used the model as our first alpha model (before adding the remaining models).
 
-<add comment>
+!Add Comments here!
 
-
-<div class="message">
 Since the NeMo model is in docker hub you can now pull it and download with:
 `docker pull robmsmt/sl-nemo-en-16k`
-</div>
 
 
 ## Comparing to other ASRs through SpeechLoop
@@ -86,6 +83,7 @@ Part of the power of using SpeechLoop is that it easily allows us to take the ne
   </script>
 
 
+Test 
 ## Next Steps
 
  - We would like to reduce the model size from ~4GB to around 500mb plus the model by using minimal libraries in the container, the Onnx - Microsoft's Onnx Runtime library allows this and is probably the best option.
