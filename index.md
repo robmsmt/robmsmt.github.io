@@ -5,7 +5,7 @@ title: Home
 
 <br>
 <p class="message">This is the personal blog of robmsmt. To contact me please visit <a href="about">about</a><br><br>
-<i>No trackers, ads or data collection.</i></p>
+
 
 ---
 
