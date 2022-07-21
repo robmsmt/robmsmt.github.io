@@ -12,7 +12,7 @@ ____
 
 ## NVIDIA NeMo Overview
 
-<img class="img-fluid" src="../../../../public/images/nemo.png" alt="nemo" width="700">
+<img class="img-fluid" src="../../../../public/images/nemo.png" alt="nemo" width="500">
 
 
 In 2019 NVIDIA released a toolkit which has helped the Speech recognition field as it has raised the bar on the quality of pretrained models that are available for researchers and production engineers alike to easily test under a single toolkit. Toolkits which make heavy use of their expensive GPUs make good strategic sense and encourage the use of their propreietary CUDA libraries. However, the toolkit as well as the models themselves are released with a very permissive open source ["Apache License 2.0"](https://github.com/NVIDIA/NeMo/blob/main/LICENSE) licence which is friendly for commercial use as well as not being overly restrictive. 
@@ -49,20 +49,26 @@ for model in all_models:
 
 Now we have the checkpoint models for all 22 different NeMo engines and can compare their sizes as well as results. See table of initial results bellow.
 
-<insert table>
+!insert table!111
+
 
 
 ## Analysis
 
+
 After analysis of the data we were able to conclude that the `stt_en_contextnet_1024` model looked the most promising since it was under 1GB in size and had the 2nd best performance for the dataset we had. This meant that we used the model as our first alpha model (before adding the remaining models).
 
-!Add Comments here!
+
+!Add Comments here!111
+
 
 Since the NeMo model is in docker hub you can now pull it and download with:
 `docker pull robmsmt/sl-nemo-en-16k`
 
 
 ## Comparing to other ASRs through SpeechLoop
+
+
 Part of the power of using SpeechLoop is that it easily allows us to take the new ASR and using an existing dataset and compare the results with already added engines, now that the NeMo container is ready we run this NeMo model on our default dataset mentioned [here](https://robmsmt.github.io/2021/09/04/benchmarking-asr-first-test/).
 
 
@@ -83,13 +89,12 @@ Part of the power of using SpeechLoop is that it easily allows us to take the ne
   </script>
 
 
-Test 
 ## Next Steps
+
 
  - We would like to reduce the model size from ~4GB to around 500mb plus the model by using minimal libraries in the container, the Onnx - Microsoft's Onnx Runtime library allows this and is probably the best option.
 
+
  - Add remaining models - by enumerating each lib we can simply provide all the major models from NeMo through a very simple naming structure.
-
-
 
 
